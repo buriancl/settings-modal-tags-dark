@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-y: hidden;
+  background-color: #2a344a;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d2d8e5;
+  font-size: 18px;
+}
+
+.container {
+  padding: 20px 76px 135px 35px;
+  padding-bottom: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #232c3e;
+  border-radius: 17px;
+  width: 971px;
+  position: relative;
+}
+
+.exit-btn {
+  background-color: #2a344a;
+  border: none;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.container-top {
+  margin-top: 63px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+}
+.container-top h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.container-top p {
+  font-size: 18px;
+}
+
+.container-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-right: 55px;
+  width: calc(100% - 85px);
+}
+.container-bottom .structure-list {
+  list-style-type: none;
+}
+.container-bottom .structure-list li {
+  width: 345px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  padding-left: 25px;
+}
+.container-bottom .structure-list li:hover {
+  background-color: #2a344a;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.container-bottom .containter-bottom-right {
+  display: flex;
+  flex-direction: column;
+  background-color: #2a344a;
+  border-radius: 17px;
+  padding: 27px 29px 0 30px;
+  width: 327px;
+  height: 409px;
+}
+.container-bottom .containter-bottom-right .tags-container-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.container-bottom .containter-bottom-right .tags-container-heading h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.container-bottom .containter-bottom-right .tags-container-heading a {
+  color: #238df7;
+}
+.container-bottom .containter-bottom-right .tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container-bottom .containter-bottom-right .tags-container .tag {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  padding: 10px 12px 9px 15px;
+  background-color: #232c3e;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container-bottom .containter-bottom-right .tags-container .tag.active {
+  color: #03c04a;
+}
+.container-bottom .containter-bottom-right .tags-container .tag.active img {
+  fill: #03c04a;
+}
